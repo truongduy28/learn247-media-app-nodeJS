@@ -1,0 +1,28 @@
+POST http://localhost:1800/api/auth/register
+Content-Type: application/json
+
+{
+         "username": "u1",
+         "email": "u1@example.com",
+         "password": "00000"
+}
+
+###
+POST http://localhost:1800/api/auth/login
+Content-Type: application/json
+
+{
+   "email": "u1@example.com",
+   "password": "00000"
+}
+
+###
+POST http://localhost:1800/api/posts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNhOGUwZmExNmEzMzEwZmU0MzY0NmEiLCJpYXQiOjE2NDgwMjY3Njl9.WB4T56gSMcom6AFloKVMXnyGgknL7Qv7kvzfJlU-Lhw
+Content-Type: application/json
+
+{
+    "desc": "Xin chào đây là post 4",
+    "img": "http://j
+}
+
